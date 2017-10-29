@@ -1,0 +1,223 @@
+body {
+  background: #ededed;
+}
+
+.instructions {
+  word-wrap: break-word;
+  width: 300px;
+  margin-top: 200px;
+  margin-left: 150px;
+}
+
+
+.phone {
+  border-style: solid;
+  border-radius: 25px;
+  color: #dbdbdb;
+  width: 300px;
+  height: 600px;
+  margin-top: 100px;
+  margin-left: 30%;
+}
+
+.screen {
+  position: absolute;
+/*   margin: auto; */
+  margin-top: 65px;
+/*   margin-bottom: 100px; */
+  margin-left: 10px;
+  background-color: #FFF;
+  word-wrap: break-word;
+  /* iPhone 7 screen resolution 1334-by-750-pixel resolution */
+  width: 275px;
+  height: 465px;
+}
+
+.homeButton {
+  margin: auto;
+  margin-top: 535px;
+  width: 50px;
+      height: 50px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+  border-style: solid;
+      color: #dbdbdb;
+}
+
+
+.searchInput {
+  margin-top: 0px;
+  margin-left: 40px;
+  font-family: gotham;
+  font-size: 500%;
+
+}
+
+.koreanOutput {
+  margin-left: 40px;
+  font-size: 500%;
+}
+
+hr {
+  position: relative;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+
+.definition {
+  display: block;
+  position: absolute;
+  margin-top: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  color: #CCCCCC;
+
+}
+
+
+
+/* @Font-Face*/
+
+/* For normal */
+.normal {
+  font-weight: 400;
+}
+
+/* For bold */
+.bold,
+strong {
+  font-weight: 700;
+}
+
+/* For thin */
+.light {
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('fonts/Gotham-Bold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('fonts/Gotham-Bold.woff') format('woff'), /* Modern Browsers */
+     url('fonts/Gotham-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('fonts/Gotham-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+   font-weight: 700;
+   font-style: normal;
+ }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('fonts/Gotham-Medium.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('fonts/Gotham-Medium.woff') format('woff'), /* Modern Browsers */
+     url('fonts/Gotham-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('fonts/Gotham-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+   font-weight: 400;
+   font-style: normal;
+ }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('fonts/Gotham-Thin.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Gotham-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('fonts/Gotham-Thin.woff') format('woff'), /* Modern Browsers */
+     url('fonts/Gotham-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('fonts/Gotham-Thin.svg#svgFontName') format('svg'); /* Legacy iOS */
+   font-weight: 300;
+   font-style: normal;
+ }
+
+
+
+
+/* INPUT CSS */
+
+.content {
+  margin-top: 35px;
+  margin-left: 40px;
+}
+
+input::placeholder {
+  color: #e5e5e5;
+}
+
+
+.input {
+	display: inline-block;
+	max-width: 300px;
+	vertical-align: top;
+}
+
+.input__field {
+	display: block;
+	width: 60%;
+	border: none;
+	border-radius: 0;
+	background: #f0f0f0;
+	font-weight: bold;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 500%;
+	width: 100%;
+	background: transparent;
+	color: #333333;
+	-webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.input__field:focus {
+	outline: none;
+}
+
+.footer {
+  color: white;
+  position: relative;
+  margin-top: 150px;
+
+}
+
+.hide {
+ display: none;
+}
+
+
+
+
+
+
+
+/* ANIMATION */
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
