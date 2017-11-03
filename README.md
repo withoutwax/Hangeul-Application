@@ -8,6 +8,13 @@ The intention of this project is to create an application which helps students s
 For more info please visit:
 [Aㅏ](https://withoutwax.me/blog/2017/7/29/6p3bwfbbm1ez0s3uk5squx7rt2s0ts)
 
+
+
+## Simulations:
+
 For a simulation, visit:
 [CODEPEN](https://codepen.io/withoutwax/full/VMvXWJ/)
 
+OR
+
+Visit the link here: withoutwax.github.io/Hangeul-Application
